@@ -1,13 +1,15 @@
 import com.codeborne.selenide.SelenideElement;
 import org.testng.annotations.Test;
+
 import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 
-public class Test1 {
+class Test1 {
     @Test
     void shouldSubmitRequest() {
-        open("http://localhost:555");
+        open("http://localhost:9999");
         SelenideElement form = $("[data-test-id=callback-form]");
         form.$("[data-test-id=name] input").setValue("Василий");
         form.$("[data-test-id=phone] input").setValue("+79270000000");
