@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 
-class Test1 {
+public class Test1 {
     @Test
     void shouldSubmitRequest() {
         open("http://localhost:9999");
